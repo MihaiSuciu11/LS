@@ -19,7 +19,7 @@ def exploratory_data_analysis(df):
     
     print("\nInformatii despre dataset:")
     print(df.info())
-    
+
     print("\nStatistici descriptive:")
     print(df.describe())
     
@@ -65,7 +65,7 @@ def evaluate_model(model, X_test, y_test):
     accuracy = accuracy_score(y_test, y_pred)
     print(f"Acuratetea pe setul de testare: {accuracy}")
 
-# Main flow
+# Main
 df = load_and_prepare_data()
 exploratory_data_analysis(df)
 df = preprocess_data(df)
